@@ -1,0 +1,47 @@
+{
+  "name": "zimt",
+  "version": "1.0.0",
+  "description": "cli proxy",
+  "main": "index.js",
+  "bin": "<rootDir>src/index.js",
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "/__tests__/.*\\.(ts|tsx|js)$"
+  },
+  "scripts": {
+    "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'",
+    "pretest": "npm run lint",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakoblorz/zimt.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jakoblorz/zimt/issues"
+  },
+  "homepage": "https://github.com/jakoblorz/zimt#readme",
+  "devDependencies": {
+    "@types/http-proxy": "^1.16.0",
+    "@types/jest": "^22.2.3",
+    "@types/node": "^9.6.6",
+    "@types/yargs": "^11.0.0",
+    "jest": "^22.4.3",
+    "ts-jest": "^22.4.4",
+    "typescript": "^2.8.3"
+  },
+  "dependencies": {
+    "http-proxy": "^1.17.0",
+    "yargs": "^11.0.0"
+  }
+}
